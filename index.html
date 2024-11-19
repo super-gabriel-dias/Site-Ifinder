@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="style.css">
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet">
+</head>
+
+<body>
+
+   <div id="navbar" style="width: 50%; margin: auto; padding-bottom: 10px;">
+      <nav class="navbar">
+         <ul class="navbar-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Cupons</a></li>
+            <li><a href="#">Favoritos</a></li>
+         </ul>
+
+         <!-- <ul class="navbar-links">
+            <li><a href="">Olá, GABRIEL</a></li>
+            <li>
+               <a href="">
+                  <div class="profile-icon">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#e49a9a" class="bi bi-person"
+                        viewBox="0 0 16 16">
+                        <path
+                           d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+                     </svg>
+                  </div>
+               </a>
+            </li>
+         </ul> -->
+
+         <ul class="navbar-links">
+            <a href="">
+               <li class="profile-container">
+                  <div class="profile-icon">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#e49a9a" class="bi bi-person"
+                        viewBox="0 0 16 16">
+                        <path
+                           d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+                     </svg>
+                  </div>
+                  <span style="margin-left: 5px;">Olá, GABRIEL</span>
+               </li>
+            </a>
+         </ul>
+
+
+
+      </nav>
+   </div>
+
+   <div id="produto" style="width: 50%; border-radius: 30px; margin-top: 30px; margin: auto">
+      <div id="foto" style="border-radius: 25px; height: 900px; margin-bottom: 10px;">
+         <div class="container">
+            <ul class="icon-bar">
+               <li id="lixo" class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="66" height="66"
+                     fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                     <path
+                        d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06m6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528M8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5" />
+                  </svg>
+               </li>
+               <li id="coracao" class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="66" height="66"
+                     fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                     <path fill-rule="evenodd"
+                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                  </svg>
+               </li>
+               <li id="dedao" class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="66" height="66"
+                     fill="currentColor" class="bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16">
+                     <path
+                        d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a10 10 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733q.086.18.138.363c.077.27.113.567.113.856s-.036.586-.113.856c-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.2 3.2 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.8 4.8 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z" />
+                  </svg>
+               </li>
+            </ul>
+         </div>
+      </div>
+
+
+      <div class="carousel">
+         <img alt="Image of a gaming console box with controllers" height="100"
+            src="https://storage.googleapis.com/a1aa/image/d2B0O1LgHL5VLBamN8R2fqeYqmsy4UurIqSVUdyhk6gIyYwTA.jpg"
+            width="100" />
+         <img alt="Image of a gaming console and controllers on a table" height="100"
+            src="https://storage.googleapis.com/a1aa/image/4zOfcECTIqSTeEctYQoxCteEheRJHL5FW6350tJZwRJZIjBPB.jpg"
+            width="100" />
+         <img alt="Image of a gaming console and controllers with cables" height="100"
+            src="https://storage.googleapis.com/a1aa/image/e8NNx7wmbcV7XylM0zZbWdob1YKTxydtp7KKoQoeyHOOyYwTA.jpg"
+            width="100" />
+         <img alt="Close-up image of a gaming console" height="100"
+            src="https://storage.googleapis.com/a1aa/image/ShjuA5yGyLrBFxIBKgHfpkFwIB5J11H6AyhsQO9YayaGZM4JA.jpg"
+            width="100" />
+         <img alt="Image of a gaming console connected to a TV" height="100"
+            src="https://storage.googleapis.com/a1aa/image/0hDwdMuP6Ya8K1TFkX1MnZoU44UtHBojuzdQAuKeonsFZM4JA.jpg"
+            width="100" />
+         <img alt="Image of a TV screen displaying a game" height="100"
+            src="https://storage.googleapis.com/a1aa/image/diGgqkzCfV0KAieISwqgIzDuGvBZ9xggE2S3FI7Fne7SkxgnA.jpg"
+            width="100" />
+      </div>
+
+
+   </div>
+
+   <div id="nome" style="margin-top: 30px;">
+      <div class="text">
+         <div class="title">GS5 Video Game Station 5 Console, 200 Jogos Clá...</div>
+         <div class="rating"><span class="star">★</span> 4,5 / 5 4,7 mil vendidos</div>
+      </div>
+   </div>
+
+   <div id="nome" style="margin-top: 30px; margin-bottom: 30px; ">
+      <div class="text">
+         <div class="title" style="margin-bottom: 30px; font-size: 40px;">DESCRIÇÃO DO PRODUTO</div>
+         <div id="descricao" class="rating" style="font-size: 30px; text-align: center;">
+            Estação de jogo de 8 bits com saída AV de jogo clássico retrô com diversos jogos clássicos de vários
+            consoles. Tecnologia plug-and-play, permitindo que você possa começar a jogar de
+         </div>
+         <div class="arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor"
+               class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+               <path
+                  d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+            </svg>
+         </div>
+      </div>
+   </div>
+
+
+</body>
+
+</html>
