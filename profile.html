@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Perfil</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('.favorites-carousel').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                dots: true,
+                infinite: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <div id="navbar" style="width: 50%; margin: auto; padding-bottom: 10px;">
+        <nav class="navbar">
+            <ul class="navbar-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="coupons.html">Cupons</a></li>
+                <li><a href="favorites.html">Favoritos</a></li>
+            </ul>
+
+            <ul class="navbar-links">
+                <a href="">
+                    <li class="profile-container">
+                        <div class="profile-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#e49a9a" class="bi bi-person" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+                            </svg>
+                        </div>
+                        <span style="margin-left: 5px;">Olá, USER</span>
+                    </li>
+                </a>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="perfil" style="width: 50%; margin: auto; margin-top: 30px; border-radius: 30px; padding: 20px; background-color: #f9f9f9;">
+        <h2 style="text-align: center;">Perfil de Usuário</h2>
+
+
+        <div class="settings" style="margin-top: 30px;">
+            <h3>Configurações</h3>
+            <div class="profile-info" style="text-align: center; margin-bottom: 30px;">
+                <div class="profile-icon" style="margin: auto;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="#e49a9a" class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 1.5a6.5 6.5 0 1 1 0 13A6.5 6.5 0 0 1 8 1.5zm0 11a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9z" />
+                    </svg>
+                </div>
+                <ul>
+                    <li><a href="index.html">Preferências</a></li>
+                    <li><a href="coupons.html">Cupons</a></li>
+                    <li><a href="favorites.html">Favoritos</a></li>
+                </ul>
+            </div>
+            <ul>
+                <li><a href="change-password.html">Alterar Senha</a></li>
+                <li><a href="update-info.html">Atualizar Informações</a></li>
+                <li><a href="logout.html">Sair</a></li>
+            </ul>
+        </div>
+
+        <div class="favorites">
+            <h3>Favoritos</h3>
+            <div class="favorites-carousel">
+                <div class="favorite-item">
+                    <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fshopee.com.br%2F%2528Entrega-hoje%2529-Mini-GS5-Retro-TV-Videogame-Console-Player-Para-Nes-8-Bit-Jogos-Com-200-Diferentes-Duplos-Gamepads-timibr-i.642826399.23909180642&psig=AOvVaw3aMsCMujestzJKN8-LDgGo&ust=1732292185223000&source=images&cd=vfe&opi=89978449&ved=0CBcQjhxqFwoTCJDC05np7YkDFQAAAAAdAAAAABAE"
+                        target="_blank">
+                        <img src="https://down-br.img.susercontent.com/file/sg-11134201-22100-19w0dzahi8iv02" alt="Console de Videogame GS5" style="width: 100%; height: auto;">
+                        <p>Produto 1: Console de Videogame GS5</p>
+                    </a>
+                </div>
+                <div class="favorite-item">
+                    <a href="https://www.google.com/aclk?sa=l&ai=DChcSEwiy0K_P6e2JAxVJIkQIHcFMPKsYABAPGgJkeg&ae=2&co=1&gclid=Cj0KCQiA0fu5BhDQARIsAMXUBOIK-ioaovdlWPozC15_yDuwnRP5wtjuSvkXfGPIaKwPFgrWtwHvcNYaAnIAEALw_wcB&sig=AOD64_2N9Re_TMxUQ88DHewF6Ul8U51ogQ&ctype=5&q=&ved=2ahUKEwj53qfP6e2JAxUVpJUCHcIRIBoQwg8oAXoECAIQQg&adurl="
+                        target="_blank">
+                        <img src="https://images9.kabum.com.br/produtos/fotos/643089/controle-sony-dualsense-ps5-sem-fio-chroma-pearl-1000044153_1727972056_g.jpg" alt="Controle Sem Fio" style="width: 100%; height: auto;">
+                        <p>Produto 2: Controle Sem Fio</p>
+                    </a>
+                </div>
+                <div class="favorite-item">
+                    <a href="https://www.google.com/imgres?q=alexa&imgurl=https%3A%2F%2Fhttp2.mlstatic.com%2FD_NQ_NP_999944-MLU73420555227_122023-O.webp&imgrefurl=https%3A%2F%2Fwww.mercadolivre.com.br%2Faexa-echo-dot-5-geraco-com-relogio-azul-claro-amazon-bivolt-cor-azul-claro%2Fp%2FMLB19757118&docid=m_E8LNfdZ3YWdM&tbnid=Zz8HMosMBxPtEM&vet=12ahUKEwinkaXf6e2JAxWApJUCHY0dAw8QM3oECG4QAA..i&w=461&h=500&hcb=2&ved=2ahUKEwinkaXf6e2JAxWApJUCHY0dAw8QM3oECG4QAA"
+                        target="_blank">
+                        <img src="https://i.zst.com.br/thumbs/12/3b/32/1294420843.jpg" alt="Assistente por Voz" style="width: 100%; height: auto;">
+                        <p>Produto 3: Assistente por Voz</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+</body>
+
+</html>
